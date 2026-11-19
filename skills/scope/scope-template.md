@@ -55,6 +55,7 @@ Capture conventions, then install lint, format, and pre-commit enforcement from 
      the spec, NOT here. This is what a feature looks like right after its spec is captured. -->
 Core entities every feature builds on: users, teams, memberships, standup entries, template.
 **Done when:** entities and relationships support later slices (reminders, templates, history) without a breaking migration.
+Schema context: `db/schema.dbml`
 - [x] Design it (spec): `/architect data model`
 - [ ] Build it: `/develop data model`
    - [ ] Schema + constraints: tables, keys, unique/check, cascades (AC-1..6)
@@ -127,6 +128,8 @@ Partial catalog; finish the remaining pieces via /develop. code in `src/catalog/
 ```
 
 `existing` is not `done`: it predates the workflow, so `/develop` and `/sync` leave it alone.
+
+Optional `Schema context: <path>` points `/architect` to a supplied DBML file. Use a repository relative path. Keep the file in place; scope records no schema details and does not edit it.
 
 ## Large product: epic split
 

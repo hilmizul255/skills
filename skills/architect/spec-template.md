@@ -92,6 +92,9 @@ Do not repeat the pros/cons list, explain the reasoning. 1 to 3 paragraphs.>
 **Data model sketch**:
 <Entities, key fields, nullable/required, FK relationships, unique constraints>
 
+**DBML companion**: [`<path>`](<relative path>) (preview only; omit when skipped or not applicable)
+<!-- Include only when the optional DBML preview was created or updated. State if project conventions make this file authoritative instead of a preview companion. -->
+
 **State transitions** (if applicable):
 <e.g. order: draft → submitted → paid → fulfilled. Omit if no state machine>
 

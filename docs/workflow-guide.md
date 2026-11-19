@@ -121,6 +121,8 @@ Before writing, it checks whether a spec for this already exists. If a very clos
 
 It writes the feature spec as `Proposed` and links it to the matching row in the scope, so the plan and the decision point at each other.
 
+For a feature with relational data, `/architect` may also offer a DBML preview after the data model is confirmed. If the scope points to a supplied DBML file, it can update that file when it represents the same schema, create a feature specific file instead, or skip the preview. It shows the proposed DBML for review and links the saved file from the spec. The spec remains the build contract unless the project explicitly treats DBML as its canonical schema source.
+
 #### Stage 5, build it
 
 You run `develop`. This is where the most branching happens, and it happens in a set order.
