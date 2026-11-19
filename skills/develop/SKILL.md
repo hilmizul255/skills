@@ -55,7 +55,7 @@ Before mutating anything (skip silently if solo, offline, or not using git): `gi
 
 Warnings, not hard blocks, but surface them.
 
-**Git integration:** if the nearest `AGENTS.md` `## Git` says `integration: on`, read `flow/git.md` and follow it (branch before building, commit as milestones land); absent or `off` → do no active git.
+**Git integration:** if the nearest `AGENTS.md` `## Git` says `integration: on`, read `flow/git.md` and follow it (branch before building, record proposed commit subjects in `docs/commit-notes.md`); absent or `off` → do no active git. Never commit or push from any integration setting.
 
 ### Step 0: The spec gate (always first)
 

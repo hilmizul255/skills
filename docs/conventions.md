@@ -16,7 +16,7 @@ Every skill writes in the same voice, and it is defined in one place: the shared
 
 ## Completion summaries: lead with the essentials
 
-The report a skill prints at the end is read by a human scanning fast, so it leads with what matters and points to the files for the rest (the durable record already lives in the scope, the spec, `verify.md`, `docs/reviews/`, the commit/PR). One shape, every skill:
+The report a skill prints at the end is read by a human scanning fast, so it leads with what matters and points to the files for the rest (the durable record already lives in the scope, the spec, `verify.md`, `docs/reviews/`, `docs/commit-notes.md`, or the commit/PR). One shape, every skill:
 
 - **Headline** (one line): what happened and the single outcome that matters.
 - **Next**: the one command to run, or the pending decision.

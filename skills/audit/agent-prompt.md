@@ -49,7 +49,7 @@ Three rules bind every skill that touches them. Never overwrite curated prose in
 What `/audit` does with them (every phase that writes or audits root):
 
 - **Creating root** (greenfield, whole-repo): populate `## Stack` from the architecture spec if it exists (source of truth, even on greenfield with no code), else the code/manifest, else `<to be filled>`. Seed `## Build approach` from the scope header if one exists (name + one line principle), else `<TBD, set by /scope>`.
-- **`## Git`** (from the git integration question): write the engineer's choice as a small block, e.g. `- integration: on` / `- branch prefix: feat/` / `- commit: per-milestone`, or just `- integration: off`. Absent means off. A recorded preference, not a mirrored source of truth; `/develop` reads it to branch and commit, `/document` to gate the PR.
+- **`## Git`** (from the git integration question): write the engineer's choice as a small block, e.g. `- integration: on` / `- branch prefix: feat/`, or just `- integration: off`. Absent means off. A recorded preference, not a mirrored source of truth. On means branch guidance and proposed commit subjects in `docs/commit-notes.md`; it never commits or pushes. `/document` does not gate PR creation on this setting.
 - **Auditing existing root** (gap-fill): either field missing or placeholder → ROOT_GAPS; either field contradicting its source → CONTRADICTIONS.
 
 This keeps the `/architect → /audit` handoff order-independent: root absorbs the decided stack whenever audit runs.
